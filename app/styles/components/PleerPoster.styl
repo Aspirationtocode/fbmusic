@@ -1,0 +1,17 @@
+.pleer-poster
+	image-bg("1girl.jpg")
+	animation opacity-out 2s
+	display flex
+	flex-basis 70%
+	height calc(100vh - 116px)
+	position relative
+	background-size cover
+
+	@media (max-width 850px)
+		display none
+
+@keyframes opacity-out
+	0%
+		opacity 0
+	100%
+		opacity 1

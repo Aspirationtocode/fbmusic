@@ -1,0 +1,23 @@
+.social-list
+	margin-bottom 13px
+	&__link
+		display block
+		padding 6px 54px
+		font-size 1.6em
+		color #9de92f
+		position relative
+		&:before
+			content ""
+			position absolute
+			top 14px
+			left 20px
+			display block
+			image-bg("arrow-left.svg")
+			transform rotate(180deg)
+			size(24px)
+			transition .2s ease all
+		&:hover
+			color #fff
+			&:before
+				size(32px)
+				top 10px

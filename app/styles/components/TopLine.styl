@@ -1,0 +1,63 @@
+.top-line
+	display flex
+	padding 0 16px
+	align-items center
+	image-bg("menubg.jpg")
+	box-shadow 2px 2px 2px rgba(0, 0, 0, 0.14)
+	position relative
+	height 58px
+
+
+
+	&__icon
+		width 32px
+		height 32px
+		background-repeat no-repeat
+		background-position center
+		margin-left 16px
+		background-size cover
+
+		@media screen and (max-width: 550px)
+			display none
+
+		&:hover
+			cursor pointer
+	&__icon--open-menu
+		image-bg("burger-light.svg")
+		margin  0
+		background-size  auto
+		flex-shrink 0
+
+		@media screen and (max-width: 550px)
+			display block
+
+	&__icon-youtube
+		image-bg("youtube-icon.svg")
+
+	&__icon--soundcloud
+		image-bg("soundcloud-icon.svg")
+
+	&__icon--vk
+		image-bg("vk-icon.svg")
+
+	&__icon--facebook
+		image-bg("facebook-icon.svg")
+		margin-right 6px
+
+	&__social-icons
+		display flex
+
+	&__logo-icon
+		image-bg("logo-min.svg")
+		width 32px
+		height 32px
+		margin -16px 8px -16px 16px
+		background-repeat no-repeat
+		background-position center
+
+	&__logo-text
+		flex-grow 1
+		font-size 24px
+		font-weight bold
+		color #fff
+		letter-spacing 2px
